@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier
+_commit: v0.3.0
+_src_path: gh:meltano/edk
+admin_name: Matt Menzenski
+cli_prefix: sqlfluff
+extension_description: A meltano utility extension for SQLFluff that wraps the `sqlfluff`
+    command.
+extension_id: sqlfluff-ext
+extension_name: SQLFluff
+extension_name_lower: sqlfluff
+library_name: sqlfluff_ext
+wrapper_target_name: sqlfluff
