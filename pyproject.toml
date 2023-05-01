@@ -34,3 +34,30 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 sqlfluff_extension = 'sqlfluff_ext.main:app'
 sqlfluff_invoker = 'sqlfluff_ext.pass_through:pass_through_cli'
+
+[tool.yamlfix]
+comments_min_spaces_from_content = 2
+comments_require_starting_space = true
+explicit_start = false
+sequence_style = 'block_style'
+indent_mapping = 2
+indent_offset = 2
+indent_sequence = 4
+line_length = 180
+quote_basic_values = false
+quote_keys_and_basic_values = false
+
+[tool.ruff]
+select = [
+    "E",
+    "F",
+    "RUF",
+    "I001",
+]
+exclude = [
+    ".meltano",
+    ".secrets",
+    "output",
+]
+line-length = 120
+target-version = "py311"
